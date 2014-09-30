@@ -4,6 +4,6 @@ require 'clockwork'
 
 include Clockwork
 
-every(1.minutes, '1 min interval') do
-  'rake photo:choose'
+every(10.seconds, '1 min interval') do
+  `rake photo:choose`
 end

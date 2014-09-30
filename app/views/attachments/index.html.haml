@@ -1,0 +1,12 @@
+.container
+  .jumbotron
+    %h1 Добро пожаловать!
+    %p
+      - if @attachments.present?
+        Приятного просмотра!
+        = image_tag @main_attachment.file.url, style: "max-width:200px;"
+      - else
+        Так как вы зашли сюда впервые, то необходимо добавить коллекцию фото.
+    %p
+      %a.btn.btn-success.btn-lg{:href => new_attachment_path} Добавить фото
+      %a.btn.btn-success.btn-lg{:href => all_attachments_path} Все фото

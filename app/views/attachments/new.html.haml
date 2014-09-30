@@ -1,0 +1,10 @@
+.container
+  .row
+    .col-sm-4.col-sm-offset-4
+      %br
+      = form_for @attachment, :html => { :multipart => true } do |f|
+        = f.label :file
+        %br
+        = f.file_field :file, :multiple => true
+        %br
+        = f.submit "Отправить", :class => 'btn btn-primary'

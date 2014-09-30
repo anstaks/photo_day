@@ -1,0 +1,24 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: photo_development
+  pool: 5
+  username: anstak
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: photo_test
+  pool: 5
+  username: anstak
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: photo_development
+  pool: 5
+  username: anstak
+  password:
+

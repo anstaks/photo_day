@@ -1,0 +1,7 @@
+- if @attachments.present?
+  .container
+    .row
+      .col-sm-12
+        %h1 Загруженные фото:
+        - @attachments.each do |a|
+          = image_tag a.file.url, style: "float:left; height: 100px; margin: 0 20px 20px 0;"
